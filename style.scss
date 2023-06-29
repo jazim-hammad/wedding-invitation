@@ -11,13 +11,11 @@ body {
     .flower {
       text-align: center;
       width: 100%;
-      height: 100vh;
       margin: 0;
       padding: 0;
 
       img {
-        height: 100%;
-        margin-top: 0; /* Remove the margin from the img within .flower */
+        width: 100%;
       }
     }
 
