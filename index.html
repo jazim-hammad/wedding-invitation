@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("XalD9hjeT-TMCJKD4");
+      })();
+    </script>
+  </head>
+  <body>
+    <section id="main">
+      <div class="flower"><img src="./assets/main.png" alt="flower" /></div>
+    </section>
+    <section id="Themes">
+      <div class="line2"></div>
+      <h2>- Events & Themes -</h2>
+      <div class="events">
+        <section>
+          <p>Event name: Dua'a</p>
+          <p>Theme: White/OffWhite with Gold/Silver</p>
+          <p>Date: 20th December 2023</p>
+          <p>Venue: Khan Villa - Sharjah</p>
+          <p>Time: 5pm</p>
+        </section>
+        <div class="line"></div>
+        <section>
+          <p>Event name: Henna night</p>
+          <p>Theme: Arabic Dresses</p>
+          <p>Date: 21th December 2023</p>
+          <p>Venue: Khan Villa - Sharjah</p>
+          <p>Time: 6pm</p>
+        </section>
+        <div class="line"></div>
+        <section>
+          <p>Event name: Dholki</p>
+          <p>Theme: Desi Dresses / Punjabi</p>
+          <p>Date: 22th December 2023</p>
+          <p>Venue: Khan Villa - Sharjah</p>
+          <p>Time: 6pm</p>
+        </section>
+        <div class="line"></div>
+        <section>
+          <p>Event name: Baraat</p>
+          <p>Theme: Dark Colors</p>
+          <p>Date: 23th December 2023</p>
+          <p>Venue: Coral Beach Resort - Sharjah</p>
+          <p>Time: 4pm</p>
+        </section>
+        <div class="line"></div>
+        <section>
+          <p>Event name: Walima</p>
+          <p>Theme: Pastel Colors</p>
+          <p>Date: 24th December 2023</p>
+          <p>Venue: Al Bustan Hotel</p>
+          <p>Time: 7pm</p>
+        </section>
+      </div>
+      <div class="Confirmation">
+        <h1>Confirmation</h1>
+        <div class="name">
+          <h5 for="name"></h5>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter name"
+          />
+        </div>
+        <button class="button" onclick="sendMail()">Confirm Attendance</button>
+      </div>
+    </section>
+  </body>
+</html>
