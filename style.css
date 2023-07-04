@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&display=swap");
 body {
   font-family: "Great Vibes", cursive;
   margin: 0;
@@ -6,42 +6,37 @@ body {
   background-color: #440000;
   color: white;
 }
-body section {
-  text-align: center;
-}
-body section .flower {
+body .flower {
   text-align: center;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-body section .flower img {
+body .flower img {
   width: 50%;
 }
-@media (max-width: 480px) {
-  body section .flower img {
+@media (max-width: 840px) {
+  body .flower img {
     width: 100%;
   }
 }
-@media (max-width: 840px) {
-  body section .flower img {
-    width: 80%;
+@media (max-width: 1024px) {
+  body .flower img {
+    width: 100%;
   }
 }
-@media (max-width: 1024px) {
-  body section .flower img {
-    width: 60%;
-  }
+body section {
+  text-align: center;
 }
 body section .line2 {
   border-radius: 5px;
   width: 100%;
   height: 2px;
-  background-color: #dfcab3;
+  background-color: beige;
 }
 body section h2 {
   font-size: 50px;
-  color: #dfcab3;
+  color: beige;
 }
 body section .events {
   display: flex;
@@ -50,29 +45,108 @@ body section .events {
   align-items: center;
   margin-top: 20px;
 }
-body section .events section {
+body section .events .Dua,
+body section .events .Henna,
+body section .events .Dholki,
+body section .events .Baraat,
+body section .events .Walima {
+  font-family: "Cookie", cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  background-color: rgb(11, 11, 11);
   border-radius: 10px;
-  margin: 10px;
+  margin: 30px;
   width: 90%;
 }
-body section .events section:hover {
+body section .events .Dua:hover,
+body section .events .Henna:hover,
+body section .events .Dholki:hover,
+body section .events .Baraat:hover,
+body section .events .Walima:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   transform: scale(1.02);
   transition: 500ms;
 }
-body section .events section p {
+body section .events .Dua p,
+body section .events .Henna p,
+body section .events .Dholki p,
+body section .events .Baraat p,
+body section .events .Walima p {
   font-size: 30px;
   margin: 5px 0;
-  color: #dfcab3;
+  text-shadow: rgb(26, 26, 26) 1px 1px;
+}
+body section .events .Dua {
+  border: dashed #ffbf03 3px;
+  background-color: rgb(244, 241, 223);
+}
+body section .events .Dua img {
+  margin-left: 20px;
+  margin-top: -10px;
+  float: right;
+  width: 50px;
+}
+body section .events .Dua p {
+  color: #ffbf03;
+}
+body section .events .Henna {
+  border: dashed #e29176 3px;
+  background-color: #048c84;
+}
+body section .events .Henna img {
+  margin-left: 20px;
+  margin-top: -10px;
+  float: right;
+  width: 50px;
+}
+body section .events .Henna p {
+  color: #e29176;
+}
+body section .events .Dholki {
+  border: dashed rgb(14, 168, 14) 3px;
+  background-color: #fa7b1b;
+}
+body section .events .Dholki img {
+  margin-left: 20px;
+  margin-top: -10px;
+  float: right;
+  width: 50px;
+}
+body section .events .Dholki p {
+  color: rgb(14, 168, 14);
+}
+body section .events .Baraat {
+  border: dashed rgb(214, 44, 44) 3px;
+  background-color: rgb(27, 27, 27);
+}
+body section .events .Baraat img {
+  margin-left: 20px;
+  margin-top: -10px;
+  float: right;
+  width: 50px;
+}
+body section .events .Baraat p {
+  color: rgb(214, 44, 44);
+}
+body section .events .Walima {
+  border: dashed black 3px;
+  background-color: #c8a2c8;
+}
+body section .events .Walima img {
+  margin-left: 20px;
+  margin-top: -10px;
+  float: right;
+  width: 50px;
+}
+body section .events .Walima p {
+  color: black;
+  text-shadow: rgb(26, 26, 26) 0px 0px;
 }
 body section .events .line {
   width: 90%;
   height: 2px;
-  background-color: #dfcab3;
+  background-color: beige;
 }
 body section .Confirmation {
   padding: 20px;
@@ -83,45 +157,65 @@ body section .Confirmation h5 {
   font-size: 50px;
   font-weight: 100;
   margin: 0;
-  color: #dfcab3;
+  color: beige;
 }
-body section .Confirmation .name {
+body section .Confirmation .name,
+body section .Confirmation .people {
   margin-bottom: 20px;
 }
-body section .Confirmation .name h5 {
+body section .Confirmation .name h5,
+body section .Confirmation .people h5 {
   margin: 0;
-  color: #dfcab3;
+  color: beige;
   font-size: 20px;
 }
-body section .Confirmation .name input {
-  width: 15%;
+body section .Confirmation .name input,
+body section .Confirmation .people input {
+  width: 18%;
   text-align: center;
   padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #dfcab3;
+  color: beige;
   margin-top: 5px;
 }
-body section .Confirmation .name input::-moz-placeholder {
-  color: #dfcab3;
+body section .Confirmation .name input::-moz-placeholder, body section .Confirmation .people input::-moz-placeholder {
+  color: beige;
 }
-body section .Confirmation .name input::placeholder {
-  color: #dfcab3;
+body section .Confirmation .name input::placeholder,
+body section .Confirmation .people input::placeholder {
+  color: beige;
 }
 body section .Confirmation .button {
   font-family: "Great Vibes", cursive;
   font-weight: 700;
-  font-size: 20px;
-  background-color: #dfcab3;
+  font-size: 25px;
+  background-color: beige;
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
-  width: 17%;
+  width: 18%;
 }
 body section .Confirmation .button:hover {
   background-color: #9e8c78;
   transition: 200ms;
+}
+@media (max-width: 840px) {
+  body section .Confirmation .name input,
+  body section .Confirmation .people input {
+    width: 60%;
+  }
+  body section .Confirmation .button {
+    width: 60%;
+  }
+}
+@media (max-width: 840px) {
+  body section img {
+    float: right;
+    width: 90px;
+    margin-top: -70px;
+  }
 }/*# sourceMappingURL=style.css.map */

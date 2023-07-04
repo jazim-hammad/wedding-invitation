@@ -18,53 +18,67 @@
     </script>
   </head>
   <body>
-    <section id="main">
-      <div class="flower"><img src="./assets/main.png" alt="flower" /></div>
-    </section>
+    <div class="flower"><img src="./assets/main.png" alt="flower" /></div>
     <section id="Themes">
       <div class="line2"></div>
       <h2>- Events & Themes -</h2>
       <div class="events">
-        <section>
-          <p>Event name: Dua'a</p>
-          <p>Theme: White/OffWhite with Gold/Silver</p>
+        <section class="Dua">
+          <p>Event name: Dua'a <img src="./assets/dua.png" alt="" /></p>
+          <p>Theme: White / Off-White with Gold / Silver</p>
           <p>Date: 20th December 2023</p>
           <p>Venue: Khan Villa - Sharjah</p>
           <p>Time: 5pm</p>
         </section>
+
         <div class="line"></div>
-        <section>
-          <p>Event name: Henna night</p>
+
+        <section class="Henna">
+          <p>
+            Event name: Henna night
+            <img src="./assets/henna-painted-hand.png" alt="" />
+          </p>
           <p>Theme: Arabic Dresses</p>
           <p>Date: 21th December 2023</p>
           <p>Venue: Khan Villa - Sharjah</p>
           <p>Time: 6pm</p>
         </section>
+
         <div class="line"></div>
-        <section>
-          <p>Event name: Dholki</p>
+
+        <section class="Dholki">
+          <p>Event name: Dholki <img src="./assets/dhol.png" alt="" /></p>
           <p>Theme: Desi Dresses / Punjabi</p>
           <p>Date: 22th December 2023</p>
           <p>Venue: Khan Villa - Sharjah</p>
           <p>Time: 6pm</p>
         </section>
+
         <div class="line"></div>
-        <section>
-          <p>Event name: Baraat</p>
-          <p>Theme: Dark Colors</p>
+
+        <section class="Baraat">
+          <p>
+            Event name: Baraat <img src="./assets/just-married.png" alt="" />
+          </p>
+          <p>Theme: Dark Colors - Traditional wear</p>
           <p>Date: 23th December 2023</p>
           <p>Venue: Coral Beach Resort - Sharjah</p>
           <p>Time: 4pm</p>
         </section>
+
         <div class="line"></div>
-        <section>
-          <p>Event name: Walima</p>
-          <p>Theme: Pastel Colors</p>
+
+        <section class="Walima">
+          <p>
+            Event name: Walima <img src="./assets/flower-bouquet.png" alt="" />
+          </p>
+          <p>Theme: Formals / Growns - Pastel Colors</p>
           <p>Date: 24th December 2023</p>
           <p>Venue: Al Bustan Hotel</p>
           <p>Time: 7pm</p>
         </section>
       </div>
+      <div class="line2"></div>
       <div class="Confirmation">
         <h1>Confirmation</h1>
         <div class="name">
@@ -76,8 +90,19 @@
             placeholder="Enter name"
           />
         </div>
+
+        <div class="people">
+          <h5 for="people"></h5>
+          <input
+            type="number"
+            class="form-control"
+            id="people"
+            placeholder="Enter the number of attendees"
+          />
+        </div>
         <button class="button" onclick="sendMail()">Confirm Attendance</button>
       </div>
+      <img src="./assets/jazim-sign.png" alt="" />
     </section>
   </body>
 </html>
